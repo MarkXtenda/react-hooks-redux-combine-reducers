@@ -7,9 +7,9 @@ function Authors() {
   return (
     <div>
       <ul>
-        {authors.map((author) => (
+        {authors ? authors.map((author) => (
           <li key={author.id}>{author.authorName}</li>
-        ))}
+        )) : "none"}
       </ul>
     </div>
   );
